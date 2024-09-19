@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tag Examples</title>
+    <style>
+        /* Style for the demonstration */
+        body { font-family: Arial, sans-serif; }
+        section { margin-bottom: 20px; }
+        hr { margin: 20px 0; }
+    </style>
+</head>
+<body>
+
+    <!-- Document Structure Tags -->
+    <header>
+        <h1>HTML Tags Example</h1>
+        <nav>
+            <ul>
+                <li><a href="#sectioning">Sectioning</a></li>
+                <li><a href="#text-content">Text Content</a></li>
+                <li><a href="#embedded-content">Embedded Content</a></li>
+                <li><a href="#forms-input">Forms & Input</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#interactive-elements">Interactive Elements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Sectioning Tags -->
+    <section id="sectioning">
+        <h2>Sectioning Tags</h2>
+        <article>
+            <header>
+                <h3>Article Header</h3>
+            </header>
+            <p>This is an article, which is a self-contained piece of content.</p>
+            <footer>
+                <p>Article Footer</p>
+            </footer>
+        </article>
+
+        <aside>
+            <p>This is an aside, which contains content related to the main content, but not directly part of it.</p>
+        </aside>
+        <footer>
+            <p>This is the footer of the document.</p>
+        </footer>
+    </section>
+
+    <hr>
+
+    <!-- Text Content Tags -->
+    <section id="text-content">
+        <h2>Text Content Tags</h2>
+        <p><strong>Strong Text:</strong> <strong>This text is bold and important.</strong></p>
+        <p><em>Emphasized Text:</em> <em>This text is emphasized and italicized.</em></p>
+        <p><small>Small Text:</small> <small>This is small text.</small></p>
+        <p><abbr title="HyperText Markup Language">HTML</abbr> is the standard markup language for creating web pages.</p>
+        <p><cite>Citation:</cite> <cite>This is a reference to a creative work.</cite></p>
+        <p><q>Quote:</q> <q>This is a short inline quotation.</q></p>
+        <p><code>Code:</code> <code>&lt;div&gt;Sample Code&lt;/div&gt;</code></p>
+        <p><kbd>Keyboard Input:</kbd> <kbd>Ctrl + S</kbd></p>
+        <p><mark>Marked Text:</mark> <mark>This text is highlighted.</mark></p>
+        <p><del>Deleted Text:</del> <del>This text has been deleted.</del></p>
+        <p><ins>Inserted Text:</ins> <ins>This text has been inserted.</ins></p>
+        <p><sub>Subscript:</sub> H<sub>2</sub>O (water)</p>
+        <p><sup>Superscript:</sup> E = mc<sup>2</sup> (Einstein's theory)</p>
+    </section>
+
+    <hr>
+
+    <!-- Embedded Content Tags -->
+    <section id="embedded-content">
+        <h2>Embedded Content Tags</h2>
+        <p><img src="https://via.placeholder.com/150" alt="Placeholder Image"> - This is an image embedded using the <code>&lt;img&gt;</code> tag.</p>
+        <figure>
+            <img src="https://via.placeholder.com/300" alt="Another Placeholder">
+            <figcaption>This is a figure caption.</figcaption>
+        </figure>
+        <iframe src="https://www.example.com" width="300" height="200" title="Example Iframe"></iframe>
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <hr>
+
+    <!-- Forms & Input Tags -->
+    <section id="forms-input">
+        <h2>Forms & Input Tags</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea><br><br>
+
+            <fieldset>
+                <legend>Choose your favorite Web Language:</legend>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </fieldset>
+
+            <select name="cars" id="cars">
+                <optgroup label="German Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="audi">Audi</option>
+                </optgroup>
+                <optgroup label="Japanese Cars">
+                    <option value="toyota">Toyota</option>
+                    <option value="mazda">Mazda</option>
+                </optgroup>
+            </select><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Tables -->
+    <section id="tables">
+        <h2>Table Tags</h2>
+        <table border="1">
+            <caption>Sample Table</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>30</td>
+                    <td>New York</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>25</td>
+                    <td>London</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">End of Table</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Interactive Elements -->
+    <section id="interactive-elements">
+        <h2>Interactive Elements</h2>
+        <details>
+            <summary>Click to Expand</summary>
+            <p>This is hidden content revealed when the details element is expanded.</p>
+        </details>
+        <dialog open>
+            <p>This is a dialog box.</p>
+        </dialog>
+    </section>
+
+</body>
+</html>
